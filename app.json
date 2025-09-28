@@ -22,20 +22,37 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/pushups.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.CAMERA"
+      ],
+      "package": "com.anonymous.posecorrectionapp"
     },
     "web": {
       "favicon": "./assets/images/pushups.png"
     },
-    "plugins": [
+    "plugins":  [
       "react-native-vision-camera",
-      "expo-build-properties"
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.0.21",
+            "extraMavenRepos": ["https://jitpack.io"]
+          },
+          "ios": { "useFrameworks": "static" }
+        }
+      ]
     ]
   }
 }
