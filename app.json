@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "PoseCorrectionApp",
+    "slug": "pose-correction-app",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/images/pushups.png",
+    "splash": {
+      "image": "./assets/images/pushups.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": false,
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/pushups.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/pushups.png"
+    },
+    "plugins": [
+      "react-native-vision-camera",
+      "expo-build-properties"
+    ]
+  }
+}
